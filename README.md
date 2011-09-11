@@ -6,7 +6,7 @@ Emulates iOS-style placeholder input fields.
 Usage
 -----
 
-    $('input[placeholder]').iosPlaceholder()
+    $('input[placeholder]').iosPlaceholder();
 
 Todo
 ----
