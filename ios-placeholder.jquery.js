@@ -8,7 +8,7 @@
       
       var $this = $(this),
       
-          // Init placeholder div
+          // Init placeholder span
           placeholderText = $this.attr('placeholder'),
           $placeholder = $('<span class="placeholder">')
             .css({ position: 'absolute', paddingLeft: (($this.outerHeight() - $this.height()) / 2) + 1 + "px" })
