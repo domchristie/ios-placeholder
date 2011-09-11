@@ -58,7 +58,7 @@
       
       $this.keydown(function(evt) {
         // A list of keycodes that don't output any characters
-        if(!(evt.which === 13 || (evt.which >= 16 && evt.which <= 20) || (evt.which === 27) || (evt.which >= 33 && evt.which <= 40) || (evt.which >= 91 && evt.which <= 93) || (evt.which >= 112 && evt.which <= 123) || (evt.which >= 144 && evt.which <= 145))) {
+        if(!(evt.which === 13 || (evt.which >= 16 && evt.which <= 20) || (evt.which === 27) || (evt.which >= 33 && evt.which <= 40) || (evt.which >= 91 && evt.which <= 93) || (evt.which >= 112 && evt.which <= 123) || (evt.which >= 144 && evt.which <= 145) || evt.which === 224)) {
           $placeholder.hide();
         }
       });
