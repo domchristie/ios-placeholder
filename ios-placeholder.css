@@ -1,0 +1,6 @@
+.placeholder {
+  color: #999;
+}
+.focussed .placeholder {
+  color: #ccc;
+}

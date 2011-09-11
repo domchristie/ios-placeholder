@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>iOS Placeholder jQuery Plugin</title>
+<link rel="stylesheet" href="normalise.css"></link>
+<link rel="stylesheet" href="ios-placeholder.css"></link>
+<style>
+  body {
+    width: 751.538px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    line-height: 1.4;
+  }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+<script src="ios-placeholder.jquery.js"></script>
+<script>
+  $(function(){
+    $('input[placeholder]').iosPlaceholder();
+  });
+</script>
+</head>
+<body>
+  <h1>iOS-style Placeholder jQuery Plugin</h1>
+  <p>Inspired by Robert Nyman in his <a href="http://robertnyman.com/2011/05/02/html5-placeholder-and-an-alternative-approach-introducing-roberts-playground/">alternative approach to the HTML5 placeholder behaviour</a>, and Recurly's <a href="https://js.recurly.com/examples/">nice form examples</a>, this plugin aims to mimic the behaviour of the placeholder behaviour on iOS form fields i.e. keep the placeholder text on focus, and only remove upon entering text.</p>
+  <input type="text" placeholder="Username" />
+</body>
+</html>
