@@ -8,8 +8,12 @@ Usage
 
     $('input[placeholder]').iosPlaceholder();
 
+Browser Support
+---------------
+
+Works on all modern browsers. Also tested on IE6-8 and works well.
+
 Todo
 ----
 
-* IE testing
 * Refactor parts into nice methods
