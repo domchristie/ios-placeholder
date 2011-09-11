@@ -12,3 +12,4 @@ Todo
 ----
 
 * IE testing
+* Refactor parts into nice methods
