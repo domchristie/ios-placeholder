@@ -1,7 +1,7 @@
 iOS Placeholder
 ===============
 
-Emulates iOS-style placeholder input fields. [See the demo](http://domchristie.github.com/ios-placeholder/)
+Emulates iOS-style placeholder input fields.
 
 Usage
 -----
