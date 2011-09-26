@@ -4,7 +4,7 @@
     if(!this.length) {
       return false;
     }
-    return this.each(function() {
+    return this.filter('input').each(function() {
       
       var $this = $(this),
       
@@ -15,7 +15,7 @@
             .text(placeholderText)
             
             // Trigger text field focus
-            .click(function() {
+            .bind('click.iosPlaceholder', function() {
               $this.focus();
             }),
           
@@ -45,24 +45,24 @@
         $placeholder.hide();
       }
           
-      $this.focus(function() {
+      $this.bind('focus.iosPlaceholder', function() {
         $placeholderWrapper.addClass('focussed');
       });
       
-      $this.blur(function() {
+      $this.bind('blur.iosPlaceholder', function() {
         $placeholderWrapper.removeClass('focussed');
         if($this.val() === '') {
           $placeholder.show();
         }
       });
       
-      $this.keydown(function(evt) {
+      $this.bind('keydown.iosPlaceholder', function(evt) {
         // A list of keycodes that don't output any characters
         if(!(evt.which === 13 || (evt.which >= 16 && evt.which <= 20) || (evt.which === 27) || (evt.which >= 33 && evt.which <= 40) || (evt.which >= 91 && evt.which <= 93) || (evt.which >= 112 && evt.which <= 123) || (evt.which >= 144 && evt.which <= 145) || evt.which === 224)) {
           $placeholder.hide();
         }
       });
-      $this.keyup(function(evt) {
+      $this.bind('keyup.iosPlaceholder', function(evt) {
         if(!$this.val()) {
           $placeholder.show();
         }
