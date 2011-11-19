@@ -22,7 +22,6 @@
           // Init placeholder wrapper
           wrapperStyles = {
                 position: 'relative',
-                width: $this.outerWidth() + "px",
                 lineHeight: $this.outerHeight() + "px",
                 fontSize: $this.css('fontSize')
               },
@@ -30,7 +29,9 @@
             .css(wrapperStyles)
             .html($placeholder);
       
-      $this.removeAttr('placeholder');
+      $this
+        .attr('autocomplete', 'off')
+        .removeAttr('placeholder');
       
       // Wrap input field in placeholder wrapper
       // In this way, the wrapper is inserted directly into the document,
