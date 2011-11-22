@@ -11,7 +11,7 @@
           // Init placeholder div
           placeholderText = $this.attr('placeholder'),
           $placeholder = $('<div class="placeholder">')
-            .css({ position: 'absolute', paddingLeft: (($this.outerHeight() - $this.height()) / 2) + 2 + "px" })
+            .css({ position: 'absolute', paddingLeft: (($this.outerHeight() - $this.height()) / 2) + 2 + "px", width: $this.width(), whiteSpace: 'nowrap', overflow: 'hidden' })
             .text(placeholderText)
             
             // Trigger text field focus
